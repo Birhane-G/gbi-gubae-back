@@ -9,8 +9,8 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
 
   const config = new DocumentBuilder()
-    .setTitle('My API')
-    .setDescription('The API documentation')
+    .setTitle('Gubae API')
+    .setDescription('The Gubae API documentation')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
