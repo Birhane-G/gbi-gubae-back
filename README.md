@@ -100,11 +100,27 @@ http://localhost:8000/api
 mkdir src/<your-module>
 
 # Step 2: Create the files:
-touch src/<your-module>/<your-module>.controller.ts
-touch src/<your-module>/<your-module>.service.ts
-touch src/<your-module>/<your-module>.dto.ts
-touch src/<your-module>/<your-module>.module.ts
+touch src/modules/<your-module>/<your-module>.controller.ts
+touch src/modules/<your-module>/<your-module>.service.ts
+touch src/modules/<your-module>/<your-module>.dto.ts
+touch src/modules/<your-module>/<your-module>.module.ts
 touch src/entities/<your-entity>.entity.ts
+```
+
+###  Module
+
+```bash
+nest g module module/<modulename>
+```
+###  Service
+
+```bash
+nest g service module/<modulename>
+```
+
+###  Controller
+```bash
+nest g controller module/<modulename>
 ```
 
 ### Example Module Registration
